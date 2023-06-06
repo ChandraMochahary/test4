@@ -91,13 +91,13 @@
 
 
 
-    <video id="video-player" src="bakery.mp4" controls></video>
+    <video id="video-player" src="The Bill of Rights Hand Game US History Review_MUTED_2.mp4.mp4" controls></video>
 
     <br>
 
     <p id="translation"></p>
 
-    <audio hidden id="audio-player" controls src="dubs/English [🇬🇧] (Original).mp3"></audio>
+    <audio hidden id="audio-player" controls src="rights_dubbing/English [🇬🇧] (Original).mp3"></audio>
     <div id="button-grid">
     </div>
 
@@ -139,7 +139,7 @@
                 button.classList.add('selected');
                 console.log(event.target.dataset.track)
                 current_language = event.target.dataset.track.split(' ')[0]
-                let audioFile = 'dubs/' + event.target.dataset.track;
+                let audioFile = 'rights_dubbing/' + event.target.dataset.track;
                 audioPlayer.src = audioFile;
 
                 display_current_translation()
